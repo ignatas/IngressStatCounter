@@ -1,0 +1,22 @@
+{
+  "name": "ingress-stat-counter",
+  "version": "1.0.0",
+  "description": "autotests with cypress",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "chance": "^1.0.18",
+    "cypress": "^3.7.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-chai-friendly": "^0.4.1",
+    "eslint-plugin-cypress": "^2.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Ingress"
+  ],
+  "author": "Ignatas",
+  "license": "ISC"
+}

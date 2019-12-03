@@ -1,0 +1,8 @@
+{
+    "baseUrl": "",
+    "projectId": "",
+    "env": {
+      "wait": 3000
+    },
+    "defaultCommandTimeout": 30000    
+}
