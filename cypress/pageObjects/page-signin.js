@@ -2,17 +2,15 @@ class PageSignIn {
 
     setUsername(username) {
         cy.contains('Username')
-            //.parent().get('input[type="text"]')
             .type(username)
     }
 
     setPassword(password) {
         cy.contains('Password')
-            //.parent().get('input[type="text"]')
             .type(password)
     }
 
-    clickSygnUp() {
+    clickSignUp() {
         cy.contains('Sign Up')
             .click()
     }
