@@ -1,5 +1,5 @@
 {
-    "baseUrl": "",
+    "baseUrl": "https://aliaksandr-kasko.outsystemscloud.com/AgentProfileStats/",
     "projectId": "",
     "env": {
       "wait": 3000
