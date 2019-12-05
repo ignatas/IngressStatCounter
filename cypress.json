@@ -1,8 +1,8 @@
 {
-    "baseUrl": "",
-    "projectId": "",
-    "env": {
-      "wait": 3000
-    },
-    "defaultCommandTimeout": 30000    
+  "baseUrl": "https://aliaksandr-kasko.outsystemscloud.com/AgentProfileStats/",
+  "projectId": "",
+  "env": {
+    "wait": 3000
+  },
+  "defaultCommandTimeout": 30000
 }
