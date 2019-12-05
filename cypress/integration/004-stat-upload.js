@@ -1,7 +1,7 @@
 import PageSignIn from "../pageObjects/page-signin"
 import PageSignUp from "../pageObjects/page-signup"
 import Header from "../pageObjects/header"
-import PageSettings from "../pageObjects/page-settings"
+import PageUpload from "../pageObjects/page-upload"
 import Chance from 'chance'
 
 let agent = {
@@ -11,7 +11,7 @@ let agent = {
     email: chance.email({ domain: 'yopmail.com' })
 }
 
-describe('Sign up -> Sign in -> Log out', () => {
+describe('Uploader', () => {
 
     it('positive: registration', () => {
         cy.visit('')
@@ -31,17 +31,24 @@ describe('Sign up -> Sign in -> Log out', () => {
         cy.contains('This Username, Agent Name or Email already exist but not confirmed.')
     })
 
-    it('positive: login and logout', () => {
-        //login
+    it('positive: new user uploads stats', () => {
+        //new user logins
         cy.visit('')
         cy.contains('Log in to your account')
         PageSignIn.setUsername(agent.username)
         PageSignIn.setPassword(agent.password)
         PageSignIn.clickLogInButton()
         cy.contains(agent.nickname)
-        //logout
-        Header.clickDropdown()
-        Header.clickLogOut()
+        //new user uploads stats
+        Header.clickUploadStats()
+                cy.fixture('RandomStat').then((statdata) => {
+            statdata = statdata.replace('AgentNameHere', agent.nickname)
+            PageUpload.setStats(statdata)
+        })
+        PageUpload.setMessage(Date.now()+' Hello There')
+        PageUpload.checkPublicUpload()
+        PageUpload.clickUploadButton()
+        cy.contains('Stats uploaded successfully')
     })
 
 })
