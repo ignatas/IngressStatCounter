@@ -11,7 +11,17 @@ class Header {
     }
 
     clickLogOut() {
-        cy.contains('Log Out')
+        cy.contains('a[title="Logout"]')
+            .click()
+    }
+
+    clickUploadStats() {
+        cy.contains('Upload Stats')
+            .click()
+    }
+
+    clickMedals() {
+        cy.contains('Medals')
             .click()
     }
 
