@@ -1,0 +1,149 @@
+{
+    "Sojourner": {
+        "Bronze": 15,
+        "Silver": 30,
+        "Gold": 60,
+        "Platinum": 180,
+        "Black": 360
+    },
+    "Illuminator": {
+        "Bronze": 5000,
+        "Silver": 50000,
+        "Gold": 250000,
+        "Platinum": 1000000,
+        "Black": 4000000
+    },
+    "Translator": {
+        "Bronze": 2,
+        "Silver": 10,
+        "Gold": 25,
+        "Platinum": 50,
+        "Black": 100
+    },
+    "Trekker": {
+        "Bronze": 10,
+        "Silver": 100,
+        "Gold": 300,
+        "Platinum": 1000,
+        "Black": 2500
+    },
+    "Engineer": {
+        "Bronze": 150,
+        "Silver": 1500,
+        "Gold": 5000,
+        "Platinum": 20000,
+        "Black": 50000
+    },
+    "SpecOps": {
+        "Bronze": 5,
+        "Silver": 25,
+        "Gold": 100,
+        "Platinum": 200,
+        "Black": 500
+    },
+    "Recharger": {
+        "Bronze": 100000,
+        "Silver": 1000000,
+        "Gold": 3000000,
+        "Platinum": 10000000,
+        "Black": 25000000
+    },
+    "Connector": {
+        "Bronze": 50,
+        "Silver": 1000,
+        "Gold": 5000,
+        "Platinum": 25000,
+        "Black": 100000
+    },
+    "Builder": {
+        "Bronze": 2000,
+        "Silver": 10000,
+        "Gold": 30000,
+        "Platinum": 100000,
+        "Black": 200000
+    },
+    "Explorer": {
+        "Bronze": 100,
+        "Silver": 1000,
+        "Gold": 2000,
+        "Platinum": 10000,
+        "Black": 30000
+    },
+    "Guardian": {
+        "Bronze": 3,
+        "Silver": 10,
+        "Gold": 20,
+        "Platinum": 90,
+        "Black": 150
+    },
+    "Hacker": {
+        "Bronze": 2000,
+        "Silver": 10000,
+        "Gold": 30000,
+        "Platinum": 100000,
+        "Black": 200000
+    },
+    "MindController": {
+        "Bronze": 100,
+        "Silver": 500,
+        "Gold": 2000,
+        "Platinum": 10000,
+        "Black": 40000
+    },
+    "Purifier": {
+        "Bronze": 2000,
+        "Silver": 10000,
+        "Gold": 30000,
+        "Platinum": 100000,
+        "Black": 300000
+    },
+    "Liberator": {
+        "Bronze": 100,
+        "Silver": 1000,
+        "Gold": 5000,
+        "Platinum": 15000,
+        "Black": 40000
+    },
+    "Pioneer": {
+        "Bronze": 20,
+        "Silver": 200,
+        "Gold": 1000,
+        "Platinum": 5000,
+        "Black": 20000
+    },
+    "Recon": {
+        "Bronze": 100,
+        "Silver": 750,
+        "Gold": 2500,
+        "Platinum": 5000,
+        "Black": 10000
+    },
+    "MissionDay": {
+        "Bronze": 1,
+        "Silver": 3,
+        "Gold": 6,
+        "Platinum": 10,
+        "Black": 20
+    },
+    "NL-1331Meetups": {
+        "Bronze": 1,
+        "Silver": 5,
+        "Gold": 10,
+        "Platinum": 25,
+        "Black": 50
+    },
+    "FirstSaturday": {
+        "Bronze": 1,
+        "Silver": 6,
+        "Gold": 12,
+        "Platinum": 24,
+        "Black": 36
+    },
+    "Seer": {
+        "Bronze": 10,
+        "Silver": 50,
+        "Gold": 200,
+        "Platinum": 500,
+        "Black": 5000
+    }
+}

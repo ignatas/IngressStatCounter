@@ -23,6 +23,9 @@ class Header {
     clickMedals() {
         cy.contains('Medals')
             .click()
+        cy.wait(500)    
+        cy.contains('Medal Details')
+            .click()
     }
 
 } export default new Header()
