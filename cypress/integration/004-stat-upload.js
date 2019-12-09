@@ -2,6 +2,7 @@ import PageSignIn from "../pageObjects/page-signin"
 import PageSignUp from "../pageObjects/page-signup"
 import Header from "../pageObjects/header"
 import PageUpload from "../pageObjects/page-upload"
+import PageFeed from "../pageObjects/page-feed"
 import Chance from 'chance'
 
 let agent = {
@@ -10,6 +11,8 @@ let agent = {
     nickname: chance.word({ length: 15 }),
     email: chance.email({ domain: 'yopmail.com' })
 }
+
+let dateStamp = Date.now()
 
 describe('Uploader', () => {
 
@@ -73,7 +76,7 @@ describe('Uploader', () => {
                 //and type stat into field
                 PageUpload.setStats(statdata)
             })
-            PageUpload.setMessage(Date.now() + ' Hello There, i got all Bronze')
+            PageUpload.setMessage(dateStamp + ' Hello There, i got all Bronze')
             PageUpload.checkPublicUpload()
             PageUpload.clickUploadButton()
             cy.contains('Stats uploaded successfully')
@@ -111,13 +114,29 @@ describe('Uploader', () => {
                 //and type stat into field
                 PageUpload.setStats(statdata)
             })
-            PageUpload.setMessage(Date.now() + ' Hello There, i got all Gold')
+            PageUpload.setMessage(dateStamp + ' Hello There, i got all Gold')
             PageUpload.checkPublicUpload()
             PageUpload.clickUploadButton()
             cy.contains('Stats uploaded successfully')
             Header.clickMedals()
         })
+    })
 
+    it('positive: check feed', () => {
+        //new user logins
+        cy.visit('')
+        cy.contains('Log in to your account')
+        PageSignIn.setUsername(agent.username)
+        PageSignIn.setPassword(agent.password)
+        PageSignIn.clickLogInButton()
+        cy.contains(agent.nickname)
+        //goes to check feed
+        Header.clicFeed()
+        cy.contains(dateStamp + ' Hello There, i got all Gold')
+        cy.contains(dateStamp + ' Hello There, i got all Bronze')
+        PageFeed.clickPrivateFeed()
+        cy.contains(dateStamp + ' Hello There, i got all Gold')
+        cy.contains(dateStamp + ' Hello There, i got all Bronze')
     })
 
 })
