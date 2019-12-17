@@ -11,7 +11,7 @@ class Header {
     }
 
     clickLogOut() {
-        cy.contains('a[title="Logout"]')
+        cy.get('a[title="Logout"]')
             .click()
     }
 
@@ -20,10 +20,15 @@ class Header {
             .click()
     }
 
+    clicFeed() {
+        cy.get('#wt315_OutSystemsUIWeb_wt2_block_wtHeader_wtCenter_wt536_RichWidgets_wt12_block_wtMenuItem_wt8')
+            .click()
+    }
+
     clickMedals() {
         cy.contains('Medals')
             .click()
-        cy.wait(500)    
+        cy.wait(500)
         cy.contains('Medal Details')
             .click()
     }
